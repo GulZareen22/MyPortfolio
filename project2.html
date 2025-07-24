@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Trade Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Gulzareen</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Project Page Content -->
+    <section class="project-page">
+        <div class="container">
+            <h1>Personal Trade Management System</h1>
+            
+            <div class="project-header">
+                <div class="project-image-large">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Trade Management System">
+                </div>
+                <div class="project-details">
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Completed: March 2023</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-tags"></i>
+                            <span>Python, SQL, Finance</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-user"></i>
+                            <span>Muhammad Gulzareen Hassan</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="#" class="btn"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p>The Personal Trade Management System is a comprehensive solution built with Python and SQL for managing personal trades and investments. This application tracks portfolio performance, analyzes market trends, and provides actionable insights to help traders make informed decisions.</p>
+                
+                <h2>Technical Implementation</h2>
+                <p>The system features a Python backend that connects to a SQL database for storing trade history, portfolio data, and market information. The application includes automated trade logging, profit/loss calculation, risk assessment, and performance visualization through interactive charts.</p>
+                
+                <p>Key features include:</p>
+                <ul>
+                    <li>Automated trade execution logging</li>
+                    <li>Real-time profit/loss calculations</li>
+                    <li>Portfolio diversification analysis</li>
+                    <li>Risk assessment metrics</li>
+                    <li>Performance visualization with interactive charts</li>
+                    <li>Market trend analysis and alerts</li>
+                </ul>
+                
+                <div class="project-gallery">
+                    <h2>System Screenshots</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Dashboard">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Portfolio View">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Analysis">
+                        </div>
+                    </div>
+                </div>
+                
+                <h2>Technologies Used</h2>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-database"></i>
+                        <span>SQL</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Matplotlib</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-bootstrap"></i>
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-interaction">
+                <div class="like-section">
+                    <button class="like-btn" id="likeBtn">
+                        <i class="far fa-heart"></i> <span id="likeCount">18</span> Likes
+                    </button>
+                </div>
+                
+                <div class="comments-section">
+                    <h3>Comments</h3>
+                    <div class="comment-form">
+                        <textarea placeholder="Add your comment..." id="commentText"></textarea>
+                        <button class="btn" id="postComment">Post Comment</button>
+                    </div>
+                    
+                    <div class="comments-list">
+                        <div class="comment">
+                            <div class="comment-header">
+                                <strong>Ahmed Raza</strong>
+                                <span>3 days ago</span>
+                            </div>
+                            <p>This system has revolutionized how I manage my personal investments. The risk assessment feature is particularly valuable.</p>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-header">
+                                <strong>Zainab Malik</strong>
+                                <span>1 week ago</span>
+                            </div>
+                            <p>Excellent implementation of Python for financial applications. The performance visualization is very intuitive.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Muhammad Gulzareen Hassan</div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/muhammad-gulzareen-hassan-b94b1836b" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/+923172803306" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/aesthetics_by_gul" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 Muhammad Gulzareen Hassan. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Button -->
+    <a href="index.html#contact" class="floating-contact">
+        <i class="fas fa-comment"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

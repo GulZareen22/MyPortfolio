@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Gulzareen Hassan - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Gulzareen</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="typewriter-wrap">
+                    <span class="typewriter-text"></span>
+                </h1>
+                <p>I'm Muhammad Gulzareen Hassan, a passionate Computer Engineering student at UET Taxila.</p>
+                <a href="about.html" class="btn">Learn More About Me</a>
+            </div>
+            <img src="images/Profile.jpg" alt="Profile Picture" class="profile-img">
+        </div>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="images/Profile.jpg" alt="About Me">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm Muhammad Gulzareen Hassan, a dedicated Computer Engineering student at the University of Engineering and Technology (UET) Taxila. I completed my FSc at Cadet College Kallar Kahar, where I developed a strong foundation in science and mathematics.</p>
+                    <p>I'm passionate about technology and its potential to solve real-world problems. My academic journey has equipped me with a solid understanding of computer systems, programming, and engineering principles.</p>
+                    <a href="about.html" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python Programmer</h3>
+                    <p>Experienced in Python development for various applications.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Video Editing</h3>
+                    <p>Proficient in creating professional video content.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-camera"></i>
+                    <h3>Videographer</h3>
+                    <p>Skilled in capturing high-quality video footage.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-image"></i>
+                    <h3>Photographer</h3>
+                    <p>Creative photographer with an eye for detail.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Social Media Representative</h3>
+                    <p>Experienced in managing social media platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <div class="project-slide active">
+                    <div class="project-info">
+                        <h3>Electricity Bill Counter using IoT</h3>
+                        <p>An innovative IoT solution that accurately tracks electricity consumption in real-time and calculates bills automatically.</p>
+                        <a href="project1.html" class="btn">View Project</a>
+                    </div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80" alt="Electricity Bill Counter">
+                    </div>
+                </div>
+                <div class="project-slide">
+                    <div class="project-info">
+                        <h3>Personal Trade Management System</h3>
+                        <p>A comprehensive system built with Python and SQL for managing personal trades and investments.</p>
+                        <a href="project2.html" class="btn">View Project</a>
+                    </div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Trade Management System">
+                    </div>
+                </div>
+                <div class="project-nav">
+                    <button class="project-nav-btn active"></button>
+                    <button class="project-nav-btn"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2>My Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="date">2023 - Present</span>
+                        <h4>Web Development Internee at DEN</h4>
+                        <p>Currently interning at DEN, contributing to web development projects.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="date">2022 - 2023</span>
+                        <h4>Python & SQL Project Developer</h4>
+                        <p>Worked on multiple projects involving Python programming and SQL database management.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="date">2021 - 2022</span>
+                        <h4>Departmental Social Media Team President</h4>
+                        <p>Led the social media team for the Computer Engineering department at UET Taxila.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-form">
+                <form action="https://formsubmit.co/gul92749@gmail.com" method="POST">
+                    <!-- Hidden fields for FormSubmit settings -->
+                    <input type="hidden" name="_autoresponse" value="Thank you for reaching out! I’ll get back to you soon.">
+                    <input type="hidden" name="_subject" value="New Contact Message from Portfolio">
+                    <input type="hidden" name="_template" value="box">
+
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required placeholder="Write your query, suggestion, or message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>UET Taxila, Rawalpindi, Pakistan</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span><a href="https://wa.me/923172803306" target="_blank" style="color: inherit; text-decoration: none;">+92 3172803306</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span><a href="mailto:gul92749@gmail.com" style="color: inherit; text-decoration: none;">gul92749@gmail.com</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Muhammad Gulzareen Hassan</div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/muhammad-gulzareen-hassan-b94b1836b" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/+923172803306" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/aesthetics_by_gul" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 Muhammad Gulzareen Hassan. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Button -->
+    <a href="#contact" class="floating-contact">
+        <i class="fas fa-comment"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
