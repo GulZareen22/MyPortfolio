@@ -166,10 +166,10 @@
   <div class="container">
     <h2>Contact Me</h2>
 
-    <!-- ✅ Success Alert -->
-    <div id="success-alert" style="display: none; background-color: #d4edda; color: #155724; padding: 15px; border: 1px solid #c3e6cb; border-radius: 5px; margin-bottom: 15px;">
-      ✅ Your message has been sent successfully!
-    </div>
+   <div id="success-alert" style="display: none; background-color: #d4edda; color: #155724; padding: 15px; border: 1px solid #c3e6cb; border-radius: 5px; margin-bottom: 15px;">
+  ✅ Your message has been sent successfully!
+</div>
+
 
     <div class="contact-container">
       <div class="contact-form">
@@ -177,7 +177,8 @@
           <input type="hidden" name="_autoresponse" value="Thank you for reaching out! I’ll get back to you soon.">
           <input type="hidden" name="_subject" value="New Contact Message from Portfolio">
           <input type="hidden" name="_template" value="box">
-          <input type="hidden" name="_next" value="https://gulzareen22.github.io/MyPortfolio/index.html?success=true">
+         <input type="hidden" name="_next" value="https://gulzareen22.github.io/MyPortfolio/?success=true">
+
 
           <div class="form-group">
             <label for="name">Your Name</label>
@@ -244,17 +245,22 @@
     <script src="script.js"></script>
    <!-- ✅ Add This Before </body> -->
 <script>
-  window.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
-    if (params.get("success") === "true") {
+    const isSuccess = params.get("success");
+
+    if (isSuccess === "true") {
       const alertBox = document.getElementById("success-alert");
       if (alertBox) {
         alertBox.style.display = "block";
       }
-      window.history.replaceState(null, null, window.location.pathname);
+
+      // Optional: Clear query from URL so it doesn’t show again on refresh
+      window.history.replaceState({}, document.title, window.location.pathname);
     }
   });
 </script>
+
 
 
 </body>
