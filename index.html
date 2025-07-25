@@ -245,21 +245,17 @@
     <script src="script.js"></script>
    <script>
   window.addEventListener("DOMContentLoaded", () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get("success") === "true") {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("success") === "true") {
       const alertBox = document.getElementById("success-alert");
       if (alertBox) {
         alertBox.style.display = "block";
-      } else {
-        alert("✅ Your message has been sent successfully!");
       }
-
-      // Optional: clean up URL
-      window.history.replaceState({}, document.title, window.location.pathname);
+      // Optional: clean URL (no more ?success=true)
+      window.history.replaceState(null, null, window.location.pathname);
     }
   });
 </script>
-
 
 </body>
 </html>
