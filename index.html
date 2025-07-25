@@ -161,10 +161,16 @@
         </div>
     </section>
 
-   <!-- Contact Section -->
+  <!-- Contact Section -->
 <section id="contact">
     <div class="container">
         <h2>Contact Me</h2>
+
+        <!-- ✅ Success Alert -->
+        <div id="success-alert" style="display:none; background-color: #d4edda; color: #155724; padding: 15px; border: 1px solid #c3e6cb; border-radius: 5px; margin-bottom: 15px;">
+            ✅ Your message has been sent successfully!
+        </div>
+
         <div class="contact-container">
             <div class="contact-form">
                 <form action="https://formsubmit.co/gul92749@gmail.com" method="POST">
@@ -172,6 +178,8 @@
                     <input type="hidden" name="_autoresponse" value="Thank you for reaching out! I’ll get back to you soon.">
                     <input type="hidden" name="_subject" value="New Contact Message from Portfolio">
                     <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_next" value="https://gulzareen22.github.io/MyPortfolio/index.html?success=true">
+
 
                     <div class="form-group">
                         <label for="name">Your Name</label>
@@ -210,6 +218,7 @@
 </section>
 
 
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -234,5 +243,21 @@
     </a>
 
     <script src="script.js"></script>
+    <script>
+    // Show success alert if ?success=true is in the URL
+    window.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success') === 'true') {
+            const alertBox = document.getElementById('success-alert');
+            alertBox.style.display = 'block';
+            setTimeout(() => {
+                alertBox.style.display = 'none';
+                // Optional: clean URL
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }, 5000); // hide after 5 seconds
+        }
+    });
+</script>
+
 </body>
 </html>
